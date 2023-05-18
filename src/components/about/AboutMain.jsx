@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 Modal.setAppElement("#root");
 
-const AboutMain = () => {
+const AboutMain = ({setTabIndex}) => {
   return (
     <>
       <div className="container">
@@ -26,25 +26,17 @@ const AboutMain = () => {
           {/* End title */}
           <Intro>
 
-          <div className="tokyo_tm_short_info">
+          <div className="tokyo_tm_short_info" >
             <PersonalInfo />
           </div>
           {/* End personal info */}
         {/* <div className="tokyo_tm_button--wrapper" > */}
-            <div className="tokyo_tm_button"
-                // data-position="left"
+                <div className="tokyo_tm_button button-center button-container" >
+                <button type="button" className="ib-button button-stretched"   // data-position="left"
+                    onClick={() => (setTabIndex(3))}
                 >
-               
-                <Link
-                    // className={`${
-                        //     isActiveLink(item.routePath, router.asPath)
-                        //     ? "active "
-                        //     : ""
-                        // }`}
-                        href="/contact"
-                        >
                 <span>Formularz kontaktowy</span>
-                </Link>
+                </button>
             </div>
                     </Intro>
 

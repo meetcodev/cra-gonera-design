@@ -62,52 +62,52 @@ const Contact = () => {
           <ContactFormIntro >
           {/* MENU WRAP */}
 
-          <div className="fields">
-            <form
-              className="contact_form"
-              id="myForm"
-              ref={form}
-              onSubmit={sendEmail}
-            >
-              <div className="first">
-                <ul>
-                  <li>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Imię"
-                      required
-                    />
-                  </li>
-                  {/* END FIRST NAME */}
+            <div className="fields">
+                <form
+                className="contact_form"
+                id="myForm"
+                ref={form}
+                onSubmit={sendEmail}
+                >
+                <div className="first">
+                    <ul>
+                    <li>
+                        <input
+                        type="text"
+                        name="name"
+                        placeholder="Imię"
+                        required
+                        />
+                    </li>
+                    {/* END FIRST NAME */}
 
-                  <li>
-                    <input
-                      type="email"
-                      name="user_email"
-                      placeholder="Adres email"
-                      required
-                    />
-                  </li>
-                  {/* END EMAIL */}
+                    <li>
+                        <input
+                        type="email"
+                        name="user_email"
+                        placeholder="Adres email"
+                        required
+                        />
+                    </li>
+                    {/* END EMAIL */}
 
-                  <li>
-                    <textarea
-                      name="message"
-                      placeholder="Napisz wiadomość..."
-                      required
-                    ></textarea>
-                  </li>
-                  {/* END SUBJECT MESSAGE */}
-                </ul>
-              </div>
-              <div className="tokyo_tm_button">
-                <button type="submit" className="ib-button">
-                  Wyślij wiadomość
-                </button>
-              </div>
-              {/* END SUBMIT BUTTON */}
-            </form>
+                    <li>
+                        <textarea
+                        name="message"
+                        placeholder="Napisz wiadomość..."
+                        required
+                        ></textarea>
+                    </li>
+                    {/* END SUBJECT MESSAGE */}
+                    </ul>
+                </div>
+                <div className="tokyo_tm_button button-center button-container ">
+                    <button type="submit" className="ib-button button-stretched">
+                    Wyślij wiadomość
+                    </button>
+                </div>
+                {/* END SUBMIT BUTTON */}
+                </form>
             {/* END FORM */}
           </div>
           </ContactFormIntro>

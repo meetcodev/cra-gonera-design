@@ -91,7 +91,7 @@ const images = [
                 {({ ref, open }) => (
                     <img
                         width={500}  //*edu wielkość miniatury 
-                        height={500}
+                        height={550}
                         srl_gallery_image="true"
                         src={thumbnailSrc}
                         alt="Childhood232"

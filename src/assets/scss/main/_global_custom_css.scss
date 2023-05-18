@@ -4,3 +4,44 @@
 .custom-main-title-page {
     padding: 25px 0px 25px 0px;
 }
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.tokyo_tm_contact .contact_form_title   {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.container .tokyo_tm_contact div.contact_form_subtitle--second {
+    text-align: left;
+    // font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.contact_form_subtitle--second > h6.text-accent {
+    color: rgb(8 15 109);
+}
+body.dark div.contact_form_subtitle--second > h6.text-accent,
+body.dark div.custom-main-title-page div.about_text em > div.second 
+{
+    color: #ccc;
+  }
+
+
+div.about_title.contact_title {
+    padding-bottom: 5px;
+}
+.button-container > .button-stretched { 
+    margin: 0;
+    width: 100%;
+
+
+}
+// .button-stretched {
+
+// }

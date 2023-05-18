@@ -1,34 +1,33 @@
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
 // import { isActiveLink } from "../../utilis/linkActiveChecker";
 // import './button.css'
 import { ItemMenuButton } from "./ItemMenuButton";
+import { type } from "@testing-library/user-event/dist/type";
 
 
 
-const menuItemList = [ 'HOME', 'ABOUT', 'PORTFOLIO', 'CONTACT' ];
+const menuItemList = [ 'HOME', 'ABOUT', 'PORTFOLIO',  'CONTACT' ];
 
 
-const NewHamburgerMenuButton = ({isOpen, setIsOpen, setTabIndex, tabIndex}) => {
+const NewHamburgerMenuButton = ({  setTabIndex,   }) => {
     
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
 
     const [ checked, setChecked ] = useState(false);
     const [ checkedKey, setCheckedKey ] = useState(false);
 
     const delayCSS = (event) => { 
+
         setTabIndex(+event);
-        // setCheckedKey(!checkedKey);
-        // setChecked(!checked);
-        //   console.log('event --- name', +event.target.id ); 
         try {
             if(++event){
                 setTimeout(() => {
                     setCheckedKey(!checkedKey);
                 }, 500);
+                
             }
         }
-        finally {  console.log('posłoe'); }
+        finally {  console.log(); 
+        }
         
     };
 
@@ -36,7 +35,6 @@ const NewHamburgerMenuButton = ({isOpen, setIsOpen, setTabIndex, tabIndex}) => {
     return(
         <>
         <input class="menu-icon" key={checkedKey} onClick={() => {
-                    // setIsOpen(!isOpen);
                     setChecked(!checked);
                     }
                 } 
@@ -46,17 +44,23 @@ const NewHamburgerMenuButton = ({isOpen, setIsOpen, setTabIndex, tabIndex}) => {
 
             <nav class="nav" id="stain-hamburger--nav"> 	
                 <ul className="pt-5 ulMenuList">
-                    <li   className="liMenuItem" 
-                    // style={{ display: ((item.routePath === router.asPath) || ( item.routePath === "/home" ) && (router.asPath === "/")) ? 'none' : "" }}
-                    >
-                        <div className="innerItemContainer" >
-                            <button type='button' className="liMenuItem menu_content"  id='0' onClick={ () => delayCSS(0)    } 
+                    { menuItemList.map((itemName, index) => {
+                        // if(index === itemName) return null;
+                        return(
+                            <li key={`${index}_${itemName}`}  className="liMenuItem" 
+                            // style={{ display: ((item.routePath === router.asPath) || ( item.routePath === "/home" ) && (router.asPath === "/")) ? 'none' : "" }}
+                            // style={{ display: (!checkedKey && tabIndex === index) ? 'none' : "" }}
                             >
-                            {"HOME"}
-                            </button>
-                        </div>
-                    </li>
-                    <li   className="liMenuItem" 
+                            <div className="innerItemContainer" >
+                                <button type='button' className="liMenuItem menu_content"  id={index} onClick={ () => delayCSS(index)    } 
+                                >
+                                {itemName}
+                                </button>
+                            </div>
+                        </li>
+                        )}
+                    )}
+                    {/* <li   className="liMenuItem" 
                     // style={{ display: ((item.routePath === router.asPath) || ( item.routePath === "/home" ) && (router.asPath === "/")) ? 'none' : "" }}
                     >
                         <div className="innerItemContainer" >
@@ -85,7 +89,7 @@ const NewHamburgerMenuButton = ({isOpen, setIsOpen, setTabIndex, tabIndex}) => {
                             {"CONTACT"}
                             </button>
                         </div>
-                    </li>
+                    </li> */}
                 </ul>  
             </nav>
         </>

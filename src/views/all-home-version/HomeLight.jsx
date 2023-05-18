@@ -13,7 +13,7 @@ import PageTitle from "../../components/PageTitle";
 import HamburgerMenuButton from "../../modal-menu/NewHamburgerMenuButton";
 
 const HomeLight = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     document.body.classList.toggle("dark", isDarkMode);
@@ -28,20 +28,14 @@ const HomeLight = () => {
 
   const [isOpen, setIsOpen] = useState(true);
 
-  function toggleModal(e) {
-      setIsOpen(!isOpen);
-      e.preventDefault();
-  }
-
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
 
 
 
 
   return (
     <>
-    <HamburgerMenuButton 
+       
+    <HamburgerMenuButton  
         tabIndex={tabIndex} setTabIndex={setTabIndex} 
         // onClick={toggleModal} 
         isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -49,7 +43,7 @@ const HomeLight = () => {
         <PageTitle title="Home Regular" />
         {/* End page title for seo */}
 
-        {/* <button className="theme-switcher-label" onClick={toggleDarkMode}>
+        <button className="theme-switcher-label" onClick={toggleDarkMode}>
             {isDarkMode ? (
             <>
                 <FaSun />
@@ -59,16 +53,17 @@ const HomeLight = () => {
                 <FaMoon />
             </>
             )}
-        </button> */}
+        </button>
 
-        <Tabs selectedIndex={tabIndex}   defaultIndex={1}
+        <Tabs defaultIndex={0}
+            selectedIndex={tabIndex} 
             onSelect={(index, lastIndex) => { 
                 setTabIndex(index);
                 console.log("▶ Tab Click",index);
                 console.log("x last",lastIndex);
                 }} 
         >
-            <TabList>
+            <TabList style={{ visibility: 'hidden' }}>
             {/* START LEFT MENU CONTENT */}
             <div className="leftpart">
                 <div className="leftpart_inner">
@@ -158,7 +153,7 @@ const HomeLight = () => {
                     data-aos-duration="1200"
                     data-aos-delay="100"
                     >
-                    <About />
+                    <About setTabIndex={setTabIndex} />
                     </div>
                 </TabPanel>
                 {/* END ABOUT MENU TAB CONTENT */}
@@ -200,6 +195,26 @@ const HomeLight = () => {
             {/* END RIGHT PART CONTENT */}
         </Tabs>
         {/* END TABS */}
+        <div style={{ 
+            zIndex: '99999999999999999999999',
+            // backgroundColor: 'blue', marginTop: 0, marginBottom: 0, 
+            // position: 'relative',
+            position: "absolute",
+            width: "100%",
+            top: 'auto',
+            left: 0,
+            bottom: 0,
+            color: "rgba(100, 100, 100, 1)",
+            // color: "rgba(117, 255, 255, 1)",
+            textAlign: "center",
+            backgroundColor: "rgba(206, 212, 218, 1)",
+            lineHeight: "10px",
+            height: "30px",
+            position: "fixed",
+            display: "block"
+        
+    }}
+    ><br /><p>zaprojektowane przez: meetco.dev</p> </div>
         </>
     );
 };
