@@ -51,15 +51,16 @@
 
 
 
+ 
 
-
-    button.main-menu--item {
+    // button.main-menu--item {
+    button.liMenuItem {
         background-color: transparent;
     }
 
-    .button.main-menu--item:hover {
-        box-shadow: 0 12px 16px 0 rgba(235, 36, 36, 0.24), 0 17px 50px 0 rgba(216, 35, 35, 0.19);
-      }
+    // .button.main-menu--item:hover {
+    //     box-shadow: 0 12px 16px 0 rgba(235, 36, 36, 0.24), 0 17px 50px 0 rgba(216, 35, 35, 0.19);
+    //   }
 
 
 
@@ -243,7 +244,8 @@
     text-decoration: none;
     color: #ffeba7;
     }
-    .nav ul li button.main-menu--item:after{
+    // .nav ul li button.main-menu--item:after{
+    .nav ul li button.liMenuItem :after{
     display: block;
     position: absolute;
     top: 50%;
@@ -256,7 +258,8 @@
     opacity: 0.8;
     transition: width 250ms linear;
     }
-    .nav ul li button.main-menu--item:hover:after{
+    // .nav ul li button.main-menu--item:hover:after{
+    .nav ul li button.liMenuItem:hover:after{
     width: 100%;
     }
 
@@ -319,7 +322,7 @@
         text-fill-color: #ffeba7;
         color: #ffeba7;
     }
-    .nav ul li a{
+    .nav ul li div.innerItemContainer {
         font-size: 8vh;
     }
     }
@@ -327,7 +330,15 @@
 
 
 
+// KRESKA DLA theam dark
 
+// body.dark .menu-icon:checked + label:after,
+// body.dark .menu-icon:not(:checked) + label:after{ 
+//     background-color: aquamarine;
+//     color: aqua;
+//     width: 200px;
+
+// }
 
 
 

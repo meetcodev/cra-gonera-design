@@ -32,10 +32,10 @@ const AboutMain = ({setTabIndex}) => {
           {/* End personal info */}
         {/* <div className="tokyo_tm_button--wrapper" > */}
                 <div className="tokyo_tm_button button-center button-container" >
-                <button type="button" className="ib-button button-stretched"   // data-position="left"
+                <button type="button" className="ib-button button-stretched custom-button-text"   // data-position="left"
                     onClick={() => (setTabIndex(3))}
                 >
-                <span>Formularz kontaktowy</span>
+                <span className="">FORMULARZ KONTAKTOWY</span>
                 </button>
             </div>
                     </Intro>

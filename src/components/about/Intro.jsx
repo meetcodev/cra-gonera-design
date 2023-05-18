@@ -3,8 +3,8 @@ import React from "react";
 const Intro = ({children}) => {
   const introContent = {
     image: "/img/slider/1.jpg",
-    name: "Jacek Gonera",
-    designation: "Architekt wnętrz",
+    name: "JACEK GONERA",
+    designation: "ARCHITEKT WNĘTRZ",
     text: (
       <> 
         <em>         {/*  //BUG poprawić to  */}
@@ -30,8 +30,8 @@ const Intro = ({children}) => {
       </div> */}
     <div className="tokyo_tm_about custom-main-title-page">
         <div className="about_title ">
-            <h3>{introContent.name}</h3>
-            <span>{introContent.designation}</span>
+            <h4>{introContent.name}</h4>
+            <span className="typer">{introContent.designation}</span>
         </div>
         <div className="about_text">{introContent.text}</div>
         {children ? children : ""}

@@ -19,7 +19,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          toast.success("Message Sent Successfully!", {
+          toast.success("Wiadomość została wysłana!", {
             position: "top-right",
             autoClose: 2000,
             hideProgressBar: false,
@@ -31,7 +31,7 @@ const Contact = () => {
           document.getElementById("myForm").reset();
         },
         (error) => {
-          toast.error("Ops Message Not Sent!", {
+          toast.error("Wystąpił nieoczekiwany błąd, wiadomość nie została wysłana!", {
             position: "top-right",
             autoClose: 2000,
             hideProgressBar: false,
@@ -51,7 +51,7 @@ const Contact = () => {
           <div className="tokyo_tm_title">
             <div className="title_flex">
               <div className="left">
-                <span>Contact</span>
+                <span>Kontakt</span>
                 {/* <h3>Get in Touch</h3> */}
               </div>
             </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                         <input
                         type="email"
                         name="user_email"
-                        placeholder="Adres email"
+                        placeholder="Adres e-mail"
                         required
                         />
                     </li>
@@ -94,7 +94,7 @@ const Contact = () => {
                     <li>
                         <textarea
                         name="message"
-                        placeholder="Napisz wiadomość..."
+                        placeholder="Twoja wiadomość..."
                         required
                         ></textarea>
                     </li>
@@ -102,7 +102,7 @@ const Contact = () => {
                     </ul>
                 </div>
                 <div className="tokyo_tm_button button-center button-container ">
-                    <button type="submit" className="ib-button button-stretched">
+                    <button type="submit" className="custom-button-text ib-button button-stretched">
                     Wyślij wiadomość
                     </button>
                 </div>

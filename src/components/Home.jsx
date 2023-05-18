@@ -19,9 +19,7 @@ const Home = () => {
           {/* END AVATAR */}
           <div className="details">
                 <h3 className="name">Jacek Gonera</h3>
-                <h4 className="typer">
-                    ARCHITEKT WNĘTRZ
-                </h4>
+                <h4 className="typer">ARCHITEKT WNĘTRZ</h4>
                 {/* <p className="job">
                     GONERA DESIGN
                 </p> */}

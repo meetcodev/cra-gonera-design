@@ -13,6 +13,8 @@
 08) TOKYO CONTACT
 09) TOKYO MAGIC CURSOR
 10) TOKYO MEDIA QUERIES (FOR SMALL DEVIVES)
+
+
 11) TOKYO 404
 */
 
@@ -265,17 +267,17 @@ h6 {
 /*---------------------------------------------------*/
 
 .tokyo_tm_all_wrap .leftpart {
-  width: 450px;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  z-index: 10;
-  padding: 0px 100px;
-  background-color: #fff;
-    visibility: hidden;
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    padding: 0px 100px;
+    background-color: #fff;
+    // visibility: hidden;
 }
 .tokyo_tm_all_wrap .leftpart_inner {
   width: 100%;
@@ -368,9 +370,10 @@ h6 {
   float: left;
   position: relative;
   background-color: #f8f8f8;
-  @media screen and (min-width: 1601px) {
-    padding-left: 450px;
-  }
+//   @media screen and (min-width: 1601px) {
+    // padding-left: 450px;
+
+//   }
 }
 .tokyo_tm_all_wrap .rightpart_in {
   position: relative;
@@ -948,7 +951,7 @@ ul.react-tabs__tab-list {
   }
   @media screen and (max-width: 767px) {
     position: static;
-    padding-bottom: 25px;
+    // padding-bottom: 25px;
   }
 }
 // .tokyo_tm_portfolio .portfolio_list li .inner img{
@@ -1587,7 +1590,7 @@ body.modal {
 
 @media (max-width: 1600px) {
     .tokyo_tm_all_wrap .leftpart {
-      width: 290px;
+      width: 50px;
       padding: 0 40px;
       background: #fefefe;
     }

@@ -4,7 +4,8 @@ import { Helmet } from "react-helmet-async";
 const PageTitle = ({ title }) => {
   return (
     <Helmet>
-      <title>{title} - Tokyo React Portfolio Template</title>
+      {/* <title>{title} - GONERA DESIGN by Jacek Gonera</title> */}
+      <title>GONERA DESIGN by Jacek Gonera</title>
     </Helmet>
   );
 };

@@ -42,6 +42,28 @@ div.about_title.contact_title {
 
 
 }
-// .button-stretched {
+/* START Footer */
 
-// }
+div.footer-container {
+
+}
+p.footer-text {
+    font-size: 12px;
+    // color: #333;
+    // color: #999;
+    // color: #999;
+    font-weight: 500;
+    font-family: "Montserrat";
+    letter-spacing: 0px;
+    // text-transform: uppercase;
+    // text-shadow: 0px .25px .25px rgb(0, 0, 0);
+}
+p.footer-text > a  {
+    text-decoration: none;
+    color: #0129da;
+    font-weight: 600;
+    text-shadow: 0px .10px .10px rgb(0, 255, 255);
+}
+
+
+/* END Footer */

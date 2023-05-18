@@ -8,7 +8,7 @@ const SocialShare = [
       { iconName: "behance", link: "https://www.behance.net/jgonera92/" },
       {
         iconName: "instagram",
-        link: "https://www.instagram.com/gonera.design/",
+        link: "https://www.instagram.com/jacek.gonera.design/",
       }
 ];
 const NewSocial = () => {

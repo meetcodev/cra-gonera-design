@@ -195,7 +195,7 @@ const HomeLight = () => {
             {/* END RIGHT PART CONTENT */}
         </Tabs>
         {/* END TABS */}
-        <div style={{ 
+        <div className="footer-container" style={{ 
             zIndex: '99999999999999999999999',
             // backgroundColor: 'blue', marginTop: 0, marginBottom: 0, 
             // position: 'relative',
@@ -214,7 +214,12 @@ const HomeLight = () => {
             display: "block"
         
     }}
-    ><br /><p>zaprojektowane przez: meetco.dev</p> </div>
+    ><br /><p className="footer-text">
+        zaprojektowane przez: 
+        <a target="_blank" rel="noopener noreferrer" 
+        // href="tel:665-243-926">	665-243-926</a>meetco.dev
+        href="https://meetco.dev/">	meetco.dev</a>
+        </p> </div>
         </>
     );
 };
