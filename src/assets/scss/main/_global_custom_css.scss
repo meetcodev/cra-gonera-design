@@ -11,6 +11,7 @@
 }
 
 
+/* START Contact Page  */
 
 .tokyo_tm_contact .contact_form_title   {
     text-align: justify;
@@ -42,6 +43,32 @@ div.about_title.contact_title {
 
 
 }
+
+li.li-contact-item > a {
+    text-decoration: none;
+    font-size: 16px;
+    // color: #333;
+    // color: #999;
+    // color: #999;
+    font-weight: 500;
+    font-family: "Montserrat";
+    letter-spacing: 0px;
+}
+
+
+body.dark .png-contact-icon {
+    filter: invert(95%)  ;
+}
+body.dark li.li-contact-item > a   {
+     color: #fff;
+}
+
+
+
+
+/* END Contact Page  */
+
+
 /* START Footer */
 
 div.footer-container {

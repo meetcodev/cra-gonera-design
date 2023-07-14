@@ -4,6 +4,9 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import Map from "./Map";
 import ContactFormIntro from "./ContactFormIntro";
+import PersonalInfo from "../about/PersonalInfo";
+import NewSocial from "../NewSocial";
+import CompanyInfo from "./CompanyInfo";
 
 const Contact = () => {
   const form = useRef();
@@ -109,9 +112,14 @@ const Contact = () => {
                 {/* END SUBMIT BUTTON */}
                 </form>
             {/* END FORM */}
-          </div>
-          </ContactFormIntro>
-          {/* END FIELDS */}
+            </div>
+            </ContactFormIntro>
+            {/* END FIELDS */}
+            <div className="tokyo_tm_short_info" >
+            <CompanyInfo />
+                {/* <PersonalInfo /> */}
+            </div>
+
         </div>
       </div>
       {/* END COTACT */}

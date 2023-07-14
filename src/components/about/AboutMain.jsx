@@ -13,22 +13,22 @@ Modal.setAppElement("#root");
 const AboutMain = ({setTabIndex}) => {
   return (
     <>
-      <div className="container">
-        <div className="tokyo_tm_about">
-          <div className="tokyo_tm_title">
-            <div className="title_flex">
-              <div className="left">
-                <span>About</span>
-                {/* <h3>About Me</h3> */}
-              </div>
+        <div className="container">
+            <div className="tokyo_tm_about">
+            <div className="tokyo_tm_title">
+                <div className="title_flex">
+                <div className="left">
+                    <span>About</span>
+                    {/* <h3>About Me</h3> */}
+                </div>
+                </div>
             </div>
-          </div>
-          {/* End title */}
-          <Intro>
+            {/* End title */}
+            <Intro>
 
-          <div className="tokyo_tm_short_info" >
-            <PersonalInfo />
-          </div>
+            <div className="tokyo_tm_short_info" >
+                <PersonalInfo />
+            </div>
           {/* End personal info */}
         {/* <div className="tokyo_tm_button--wrapper" > */}
                 <div className="tokyo_tm_button button-center button-container" >

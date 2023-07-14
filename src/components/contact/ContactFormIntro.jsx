@@ -4,7 +4,7 @@ const ContactFormIntro = ({children}) => {
   const introContentForm = {
     name: "GONERA DESIGN",
     subname: "Zaprojektujmy razem fajne wnętrze!",
-    subtitle: "Stwórzmy razem fajny projekt…",
+    subtitle: "Stwórzmy razem fajny projekt!",
     designation: "FORMULARZ KONTAKTOWY",
     text: (        
         <p className="second" >Zaprojektujmy razem fajne wnętrze!</p>
@@ -24,7 +24,9 @@ const ContactFormIntro = ({children}) => {
                 <h6 className="text-accent">{introContentForm.text}</h6>
             </div> */}
         </div>
-            <p className="p-contact-form-title custom-button-text tokyo_tm_title">{introContentForm.designation}</p>
+            <p className="p-contact-form-title custom-button-text tokyo_tm_title">
+                {introContentForm.designation}
+            </p>
         {children ? children : ""}
     </div>
     </>

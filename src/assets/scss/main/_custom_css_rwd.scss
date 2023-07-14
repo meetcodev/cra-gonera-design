@@ -31,6 +31,30 @@
         font-size: 12px; 
     }
 }
+
+
+@media(max-width: 769px) {
+    div#right-box-contact-mail   div       {
+        margin-left: 0;
+        padding: 0;
+        margin-right: 150px ;
+        // min-width: 210px;
+        display: block;
+    }
+}
+@media(min-width: 770px) {
+div#right-box-contact-mail   div   > ul     {
+    margin-left: auto;
+    padding: 0;
+    margin-right: 0 ;
+    min-width: 210px;
+    display: block;
+}
+}
+
+
+
+
 /* END ContactPage */
 
 
